@@ -1,0 +1,31 @@
+.papercraft-font {
+    width: 2em;
+    height: 2em;
+    transition-property: height, width;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.papercraft-font-wide {
+    width: 2.5em;
+}
+
+.papercraft-font-tall {
+    height: 2.5em;
+}
+  
+.papercraft-font-back-light {
+    fill: #ccc;
+}
+
+.papercraft-font-front-light {
+    fill: #eee;
+}
+
+.papercraft-font-back-dark {
+    fill: #999;
+}
+
+.papercraft-font-front-dark {
+    fill: #121212;
+}

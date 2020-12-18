@@ -1,0 +1,83 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <title>Papercraft Font JS</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Hand-coded SVG experimental type inpsired by folded paper">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/papercraft-font.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <script src="js/papercraft-font.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body class="xoutline">
+  <header class="py2 mt4 px-responsive">
+    <h1 class="h3 caps">Papercraft Font JS</h1>
+  </header>
+  <section id="tryYourself" class="py2 px-responsive">
+    <div id="div-try">
+      <input type="text" id="input-text-to-convert" onkeyup="convertTextToPapercraftFont()" placeholder="TYPE SOMETHING HERE..."/>
+    </div>
+
+    <div>
+      <div id="cutomize">
+        <div class="div-input caps button button-outline">
+          <input type="checkbox" id="set-dark" onchange="setDark()"/>
+          <label for="set-dark">Dark Theme</label>
+        </div>
+    
+        <div class="div-input caps button button-outline">
+          <label for="input-spacing">Spacing: </label>
+          <input type="text" id="input-spacing" onkeyup="setSpacing()" placeholder="Default: 1em" value="1em"/>
+        </div>
+    
+        <div class="div-input caps button button-outline">
+          <label for="input-font-size">Font-Size: </label>
+          <input type="text" id="input-font-size" onkeyup="setFontSize()" placeholder="Default: 2.5em" value="2.5em"/>
+        </div>
+    
+        <div class="div-input caps button button-outline">
+          <label for="input-primary-color">Primary Color: </label>
+          <input type="text" id="input-primary-color" onkeyup="setPrimaryColor()" placeholder="Example: #33A951"/>
+        </div>
+    
+        <div class="div-input caps button button-outline">
+          <label for="input-secondary-color">Secondary Color: </label>
+          <input type="text" id="input-secondary-color" onkeyup="setSecondaryColor()" placeholder="Example: #43D068"/>
+        </div>
+      </div>
+      
+      <div id="papercraft-pool"></div>
+    </div>
+  </section>
+
+  <section class="py2 px-responsive">
+    <div class="divider"></div>
+  </section>
+  
+  <section id="alphabet" class="py2 px-responsive">
+    <h2 class="h3 caps">Alphabet</h2>
+    <div id="papercraft-alphabet" class="paper-container paper-scale">
+      <script> alphabetExample(); </script>
+    </div>
+  </section>
+
+  <section class="py2 px-responsive">
+    <div class="divider"></div>
+  </section>
+
+  <footer class="py4 px-responsive">
+    <h2 class="h3 caps">This project</h2>
+    <p class=""><a href="https://github.com/victorjean9/papercraft-font-js" target="_blank" class="f5 caps button button-outline">View the JS project on Github</a></p>
+    <p class="f5 caps">JS project coded with love by <a href="https://github.com/victorjean9" target="_blank">Victor Jean</a> <br/>(based on the CSS code created by <a href="https://jxnblk.com" target="_blank">Jxnblk</a>)</p>
+    <br/>
+    <h2 class="h3 caps">The Original CSS Project</h2>
+    <p class=""><a href="https://github.com/jxnblk/papercraft" target="_blank" class="f5 caps button button-outline">View the original CSS project on Github</a></p>
+    <p class="f5 caps">Original project hand-coded with love by <a href="https://jxnblk.com" target="_blank">Jxnblk</a></p>
+  </footer>
+</body>
+</html>
