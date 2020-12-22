@@ -4,64 +4,70 @@
 
 # Papercraft Font JS
 
-Papercraft Font JS é um mini projeto em javascript que converte uma cadeia de caracteres definida para a fonte baseada em Papercraft criada por [jxnblk](https://github.com/jxnblk/papercraft).<br/>
-Você também pode colorir as letras, ajustar o tamanho da fonte, definir o espaçamento entre as letras.<br/>
-O código foi escrito em Javascript puro, sem necessidade de Frameworks ou Bibliotecas adicionais.
+Papercraft Font JS is a javascript mini project that converts a defined string to the Papercraft-based font created by [jxnblk](https://github.com/jxnblk/papercraft).<br/>
+You can also color the letters, adjust the font size, set the spacing between the letters.<br/>
+The code was written in pure Javascript, with no need for additional Frameworks or Libraries.
 
-## Exemplo
+## Example
 
-[Clique aqui para acessar a página de exemplo do projeto.](https://victorjean9.github.io/papercraft-font-js/)
+[Click here to access the project's sample page.](https://victorjean9.github.io/papercraft-font-js/)
 
-## Instalação
+## This tutorial in other languages:
 
-Adicione os arquivos `papercraft-font.js` e `papercraft-font.css` no seu projeto e faça as importações necessárias.
+- [English](https://github.com/victorjean9/papercraft-font-js)
+- [Español](https://github.com/victorjean9/papercraft-font-js/blob/main/README-es.md)
+- [Português Brasileiro](https://github.com/victorjean9/papercraft-font-js/blob/main/README-ptbr.md)
 
-Exemplo de importação:
+## Installation
+
+Add the files `papercraft-font.js` and `papercraft-font.css` in your project and make the necessary imports.
+
+Import example:
 ```html
-// Importação do aquivo CSS: papercraft-font.css
+// Importing the CSS file: papercraft-font.css
 <link rel="stylesheet" href="css/papercraft-font.css" />
 
-// Importação do aquivo Javascript: papercraft-font.js
+// Importing the Javascript file: papercraft-font.js
 <script src="js/papercraft-font.js"></script>
 ```
 
-Não é necessária a importação nenhuma bibliteca adicional, como o JQuery por exemplo. O código foi escrito em Javascript puro.
+It is not necessary to import any additional library, like JQuery for example. The code was written in pure Javascript.
 
-## Uso
+## Use
 
-### Básico
+### Basic
 
-Primeiramente você deve criar uma nova instância da classe `PapercraftFont` passando o ID de um determinado elemento como parâmetro.<br/>
-O elemento pode ser qualquer tag `<div>`, `<span>`, `<p>` e etc.
+First, you must create a new instance of the class `PapercraftFont` passing the ID of a particular element as a parameter.<br/>
+The element can be any tag `<div>`, `<span>`, `<p>` and etc.
 
-Por exemplo, abaixo temos uma tag `<div>`com o ID "papercraft-pool":
+For example, below is a tag `<div>` with the ID "papercraft-pool":
 ```html
 <div id="papercraft-pool"></div>
 ```
 
-Deve-se passar esse ID como parâmetro da instância a ser criada:
+This ID must be passed as a parameter of the instance to be created:
 ```js
 var papercraftFont = new PapercraftFont("papercraft-pool");
 ```
 
-Para converter uma cadeia de caracteres para a fonte Papercraft basta chamar a função `text` passando o texto a ser convertido como parâmetro.
+To convert a character string to the Papercraft font, just call the function `text` passing the text to be converted as a parameter.
 ```js
-papercraftFont.text("insira aqui um texto")
+papercraftFont.text("insert text here")
 ```
 
-### Colorindo as letras
+### Coloring the letters
 
-Você pode colorir as letras definindo uma cor primária e uma cor secundária.<br/>
-A cor primária é responsável pela parte frontal da letra, e a cor secundária pela parte de trás.
+You can color the letters by defining a primary color and a secondary color.<br/>
+The primary color is responsible for the front of the letter, and the secondary color for the back.
 
-Há duas formas de definir as cores: 
+There are two ways to define colors:
 
-A primeira é passando como parâmetro no momento da criação da instância:
+The first is passing as a parameter when creating the instance:
 ```js
-var papercraftFont = new PapercraftFont(elementID, corPrimaria, corSecundaria);
+var papercraftFont = new PapercraftFont(elementID, primaryColor, secondaryColor);
 ```
 
-A segunda forma é passando cada cor através das funções `setPrimaryColor` e `setSecondaryColor`:
+The second way is to pass each color through the functions `setPrimaryColor` and `setSecondaryColor`:
 ```js
 papercraftFont.setPrimaryColor("#33A951");
 papercraftFont.setSecondaryColor("#43D068");
@@ -71,9 +77,9 @@ papercraftFont.setSecondaryColor("#43D068");
   <img src="img/green.jpg?raw=true">
 </p>
  
-#### Tema Escuro
+#### Dark Theme
 
-A fonte também possui um tema escuro. Basta chamar a função `dark`:
+The font also has a dark theme. Just call the function `dark`:
 ```js
 papercraftFont.dark();
 ```
@@ -82,30 +88,30 @@ papercraftFont.dark();
   <img src="img/dark.jpg?raw=true">
 </p>
 
-### Definindo um tamanho para a fonte
+### Defining a font size
 
-Para definir um tamanho para a fonte basta chamar a função `setFontSize` passando o tamanho como parâmetro.<br/>
-O tamanho pode ser em px, em, % ou qualquer outro valor aceitável em CSS.
+To define a font size, just call the function `setFontSize` passing the size as a parameter.<br/>
+The size can be in px, em, % or any other acceptable value in CSS.
 
 ```js
 papercraftFont.setFontSize("2.5em");
 ```
 
-### Definindo o espaçamento
+### Defining spacing
 
-Para definir o espaçamento basta chamar a função `setSpacing` passando o valor do espaçamento como parâmetro.<br/>
-O tamanho pode ser em px, em, % ou qualquer outro valor aceitável em CSS.
+To define the spacing, just call the function `setSpacing` passing the spacing value as a parameter.<br/>
+The size can be in px, em, % or any other acceptable value in CSS.
 
 ```js
 papercraftFont.setSpacing("1em");
 ```
 
-## Créditos
+## Credits
 
-Código escrito por [Victor Jean](https://github.com/victorjean9).<br/>
-Esse projeto foi criado com base no código CSS da fonte Papercraft criado por [jxnblk](https://github.com/jxnblk/papercraft).
+Code written by [Victor Jean](https://github.com/victorjean9).<br/>
+This project was created based on the CSS Papercraft code created by [jxnblk](https://github.com/jxnblk/papercraft).
 
-## Licença
+## License
 
 [MIT License](http://opensource.org/licenses/MIT)
 
