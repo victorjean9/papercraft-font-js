@@ -4,7 +4,7 @@
 
 # Papercraft Font JS
 
-es un mini proyecto de JavaScript que convierte una cadena de caracteres en la fuente basada en Papercraft creada por [jxnblk](https://github.com/jxnblk/papercraft).<br/>
+Papercraft Font JS es un mini proyecto de JavaScript que convierte una cadena de caracteres en la fuente basada en Papercraft creada por [jxnblk](https://github.com/jxnblk/papercraft).<br/>
 También puede colorear las letras, ajustar el tamaño de la fuente, establecer el espacio entre las letras.<br/>
 El código fue escrito en Javascript puro, sin necesidad de marcos o bibliotecas adicionales.
 
