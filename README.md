@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="img/default.jpg?raw=true">
+</p>
+
 # Papercraft Font JS
 
-Papercraft Font JS é um mini projeto que converte uma cadeia de caracteres definida para a fonte baseada em Papercraft criada por [jxnblk](https://github.com/jxnblk/papercraft) com Javascript.<br/>
+Papercraft Font JS é um mini projeto em javascript que converte uma cadeia de caracteres definida para a fonte baseada em Papercraft criada por [jxnblk](https://github.com/jxnblk/papercraft).<br/>
 Você também pode colorir as letras, ajustar o tamanho da fonte, definir o espaçamento entre as letras.<br/>
 O código foi escrito em Javascript puro, sem necessidade de Frameworks ou Bibliotecas adicionais.
 
@@ -62,6 +66,10 @@ A segunda forma é passando cada cor através das funções `setPrimaryColor` e 
 papercraftFont.setPrimaryColor("#33A951");
 papercraftFont.setSecondaryColor("#43D068");
 ```
+
+<p align="center">
+  <img src="img/green.jpg?raw=true">
+</p>
  
 #### Tema Escuro
 
@@ -69,6 +77,10 @@ A fonte também possui um tema escuro. Basta chamar a função `dark`:
 ```js
 papercraftFont.dark();
 ```
+
+<p align="center">
+  <img src="img/dark.jpg?raw=true">
+</p>
 
 ### Definindo um tamanho para a fonte
 
